@@ -35,11 +35,12 @@ div, img {
 	letter-spacing: 1px;
 	margin-top: 30px;
 	margin-bottom: 10px;
+	text-shadow: 0px 4px 4px #aaa;
 }
 
 #subheader {
 	font-style: italic;
-	font-weight: 100;
+	font-weight: 300;
 	margin-top: 10px;
 	margin-bottom: 30px;
 }
@@ -113,4 +114,16 @@ a {
 .list-item:hover {
 	background-color: #f22613;
 	color: white;
+}
+
+#lang {
+
+}
+
+.ico {
+	display: inline-block;
+}
+
+.ico:hover {
+	opacity: 0.5;
 }
