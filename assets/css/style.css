@@ -1,56 +1,116 @@
-div {
-	transition: linear 0.2s;
+/* You may use the following selectors, but it's not required. */
+
+body {
+	font-family: "Open Sans";
 }
 
-.container {
-	background-color: white;
-	text-align: center;
-	width: 80%;
-	height: 100%;
+div, img {
+	transition: linear 0.3s;
+}
+
+#container {
+    width: 960px;
+    margin: 0px auto;
+    padding: 30px 0px;
+    text-align: center;
+}
+
+#thumbnail {
 	margin: auto;
-	padding: 30px;
 }
 
-.box {
-	display: inline-block;
+#thumbnail img {
+	width: 250px;
+	border-radius: 10px;
+}
+
+#thumbnail img:hover {
+	opacity: .5;
+}
+
+#header {
+	font-size: 2.5em;
+	font-style: bold;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+#subheader {
+	font-style: italic;
+	font-weight: 100;
+	margin-top: 10px;
 	margin-bottom: 30px;
 }
 
-.description {
-	width: 200px;
-	height: 300px;
-	background-color: #2ECC71;
-	color: white;
-	font-family: Arial;
-	border-radius: 10px;
-	line-height: 30px;
+#description {
+	line-height: 2;
+	width: 500;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+#link {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 10px;
-	margin-top: 20px;
-}
-
-.description:hover {
-	opacity: 0.75;
-}
-
-.logo {
 	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	object-fit: cover;
+	background-color: #33FF99;
+	color: white;
+	border-radius: 10px;
 }
 
-.icon {
-	width: 20px;
-	height: 20px;
-	object-fit: scale-down;
+#link:hover {
+	background-color: #4785dc;
 }
 
-#welcome {
-	font-size: 3em;
-	font-family: sans-serif;
+.list-container {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	background-color: #ddd;
+	width: 400px;
+	border-radius: 10px;
 }
 
-.contact {
-	font-size: .75em;
-	font-family: Arial;
+.list-title {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	width: 350px;
+	font-size: 1.3em;
+}
+
+.list-content {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.list-item {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 5px;
+	width: 350px;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.list-item:hover {
+	background-color: #f22613;
+	color: white;
 }
