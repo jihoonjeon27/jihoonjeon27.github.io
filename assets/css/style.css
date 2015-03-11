@@ -2,6 +2,7 @@
 
 body {
 	font-family: "Open Sans";
+	margin: 0px;
 }
 
 div, img {
@@ -9,7 +10,7 @@ div, img {
 }
 
 #container {
-    width: 960px;
+    width: 100%;
     margin: 0px auto;
     padding-top: 30px;
     text-align: center;
@@ -141,11 +142,16 @@ a {
 }
 
 #lang {
-
+	width: 400px;
+	margin: auto;
 }
 
 .ico {
-	display: inline-block;
+	display: inline;
+}
+
+.ico img {
+	border-radius: 3px;
 }
 
 .ico:hover {
