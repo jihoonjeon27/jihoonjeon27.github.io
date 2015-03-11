@@ -1,5 +1,3 @@
-/* You may use the following selectors, but it's not required. */
-
 body {
 	font-family: "Open Sans";
 	margin: 0px;
@@ -14,6 +12,7 @@ div, img {
     margin: 0px auto;
     padding-top: 30px;
     text-align: center;
+    background: #EEE5DE;
 }
 
 #navbar {
@@ -39,9 +38,14 @@ div, img {
 }
 
 #thumbnail img {
+	object-fit: cover;
+	object-position: top center;
 	width: 250px;
-	border-radius: 10px;
-	box-shadow: 0px 8px 8px #aaa;
+	height: 250px;
+	border-radius: 50%;
+	box-shadow: 0px 4px 4px #aaa;
+	image-transform: translate(0px, 30px);
+
 }
 
 #thumbnail img:hover {
@@ -50,7 +54,6 @@ div, img {
 
 #header {
 	font-size: 2.5em;
-	font-style: bold;
 	font-weight: 700;
 	letter-spacing: 1px;
 	margin-top: 30px;
@@ -108,6 +111,7 @@ a {
 	background-color: #ddd;
 	width: 400px;
 	border-radius: 10px;
+	box-shadow: 0px 4px 0px #bbb;
 }
 
 .list-title {
