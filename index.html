@@ -1,14 +1,173 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Jayson Jeon</title>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="assets/css/button.css" />
-	<link rel="icon" type="image/ico" href="assets/img/favicon.ico">
+	<title>Some Nice Cars</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css" />
+	<script src="assets/jquery-1.9.1.js"></script>
+	<script src="assets/script.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div class="container">
-		<a href="eng.html"><div id="button">Click Me!</div></a>
+	<div id="bg"></div>
+	<div id="overlay"></div>
+	<div id="invis-layer"></div>
+	<div id="navbar">
+		<div id="home-icon">
+			<img src="assets/img/home-icon.png"/>
+		</div>
+		<div id="car-button-list">
+			<div class="car-button" id="car-button-1">Porsche</div>
+			<div class="car-button" id="car-button-2">BMW</div>
+			<div class="car-button" id="car-button-3">Mercedes</div>
+			<div class="car-button" id="car-button-4">Audi</div>
+		</div>
+	</div>
+	<div class="page" id="main">
+		<div class="images"><img src="assets/img/sample-bg.jpg" /></div>
+	</div>
+	<div class="page" id="car1">
+		<div class="mpbutton" id="mp1"><a class="morepics"><span></span></a></div>
+		<div class="circ-icon" id="basic1">
+			<img src="assets/img/car-icon.png" />
+		</div>
+		<div class="circ-icon" id="mechanical1">
+			<img src="assets/img/gear-icon.png" />
+		</div>
+		<div class="description" id="basic-des1">
+			<div class="triangle" id="basic-tri1"></div>
+			<div class="rectangle" id="basic-rect1">
+				<p>Porsche 911 Carrera</p>
+				<p>MSRP: $84,300</p>
+			</div>
+		</div>
+		<div class="description" id="mech-des1">
+			<div class="triangle" id="mech-tri1"></div>
+			<div class="rectangle" id="mech-rect1">
+				<p>Power: 350 HP</p>
+				<p>Torque: 287 lb-ft</p>
+				<p>0 - 60 MPH in 4.6 s</p>
+			</div>
+		</div>
+		<div class="pic top left" id="porsche-1">
+				<img src="assets/img/porsche.jpg"/>
+			</div>
+		<div class="pic top right" id="porsche-2">
+			<img src="assets/img/porsche-2.jpg"/>
+		</div>
+		<div class="pic bottom left" id="porsche-3">
+			<img src="assets/img/porsche-3.jpg"/>
+		</div>
+		<div class="pic bottom right" id="porsche-4">
+			<img src="assets/img/porsche-4.jpg"/>
+		</div>
+	</div>
+	<div class="page" id="car2">
+		<div class="mpbutton" id="mp2"><a class="morepics"><span></span></a></div>
+		<div class="circ-icon" id="basic2">
+			<img src="assets/img/car-icon.png" />
+		</div>
+		<div class="circ-icon" id="mechanical2">
+			<img src="assets/img/gear-icon.png" />
+		</div>
+		<div class="description" id="basic-des2">
+			<div class="triangle" id="basic-tri2"></div>
+			<div class="rectangle" id="basic-rect2">
+				<p>BMW M4</p>
+				<p>MSRP: $64,200</p>
+			</div>
+		</div>
+		<div class="description" id="mech-des2">
+			<div class="triangle" id="mech-tri2"></div>
+			<div class="rectangle" id="mech-rect2">
+				<p>Power: 425 HP</p>
+				<p>Torque: 406 lb-ft</p>
+				<p>0 - 60 MPH in 4.1 s</p>
+			</div>
+		</div>
+		<div class="pic top left" id="bmw-1">
+				<img src="assets/img/bmw.jpg"/>
+			</div>
+		<div class="pic top right" id="bmw-2">
+			<img src="assets/img/bmw-2.jpg"/>
+		</div>
+		<div class="pic bottom left" id="bmw-3">
+			<img src="assets/img/bmw-3.jpg"/>
+		</div>
+		<div class="pic bottom right" id="bmw-4">
+			<img src="assets/img/bmw-4.jpg"/>
+		</div>
+	</div>
+	<div class="page" id="car3">
+		<div class="mpbutton" id="mp3"><a class="morepics"><span></span></a></div>
+		<div class="circ-icon" id="basic3">
+			<img src="assets/img/car-icon.png" />
+		</div>
+		<div class="circ-icon" id="mechanical3">
+			<img src="assets/img/gear-icon.png" />
+		</div>
+		<div class="description" id="basic-des3">
+			<div class="triangle" id="basic-tri3"></div>
+			<div class="rectangle" id="basic-rect3">
+				<p>Mercedes-Benz C63 AMG</p>
+				<p>MSRP: $63,000</p>
+			</div>
+		</div>
+		<div class="description" id="mech-des3">
+			<div class="triangle" id="mech-tri3"></div>
+			<div class="rectangle" id="mech-rect3">
+				<p>Power: 451 HP</p>
+				<p>Torque: 443 lb-ft</p>
+				<p>0 - 60 MPH in 4.4 s</p>
+			</div>
+		</div>
+		<div class="pic top left" id="c63-1">
+				<img src="assets/img/c63.jpg"/>
+			</div>
+		<div class="pic top right" id="c63-2">
+			<img src="assets/img/c63-2.jpg"/>
+		</div>
+		<div class="pic bottom left" id="c63-3">
+			<img src="assets/img/c63-3.jpg"/>
+		</div>
+		<div class="pic bottom right" id="c63-4">
+			<img src="assets/img/c63-4.jpg"/>
+		</div>
+	</div>
+	<div class="page" id="car4">
+		<div class="mpbutton" id="mp4"><a class="morepics"><span></span></a></div>
+		<div class="circ-icon" id="basic4">
+			<img src="assets/img/car-icon.png" />
+		</div>
+		<div class="circ-icon" id="mechanical4">
+			<img src="assets/img/gear-icon.png" />
+		</div>
+		<div class="description" id="basic-des4">
+			<div class="triangle" id="basic-tri4"></div>
+			<div class="rectangle" id="basic-rect4">
+				<p>Audi RS5</p>
+				<p>MSRP: $70,900</p>
+			</div>
+		</div>
+		<div class="description" id="mech-des4">
+			<div class="triangle" id="mech-tri4"></div>
+			<div class="rectangle" id="mech-rect4">
+				<p>Power: 450 HP</p>
+				<p>Torque: 317 lb-ft</p>
+				<p>0 - 60 MPH in 4.5 s</p>
+			</div>
+		</div>
+		<div class="pic top left" id="rs5-1">
+				<img src="assets/img/rs5.jpg"/>
+			</div>
+		<div class="pic top right" id="rs5-2">
+			<img src="assets/img/rs5-2.jpg"/>
+		</div>
+		<div class="pic bottom left" id="rs5-3">
+			<img src="assets/img/rs5-3.jpg"/>
+		</div>
+		<div class="pic bottom right" id="rs5-4">
+			<img src="assets/img/rs5-4.jpg"/>
+		</div>
 	</div>
 </body>
 </html>

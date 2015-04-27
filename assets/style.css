@@ -1,0 +1,310 @@
+html, body {
+	margin: 0px;
+	max-width: 100%;
+	overflow: hidden;
+	font-family: "Open Sans";
+}
+
+a {
+	text-decoration: none;
+}
+
+div {
+	transition: linear 0.2s;
+}
+
+#bg {
+	width: 100%;
+	height: 500%;
+	margin: 0px auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #FFFDF8;
+}
+
+#overlay {
+	width: 100%;
+	height: 100%;
+	margin: 0px auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+	opacity: 50%;
+	z-index: 4;
+	display: none;
+}
+
+#invis-layer {
+	width: 100%;
+	height: 100%;
+	margin: 0px auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0);
+	opacity: 1;
+	z-index: 1;
+}
+
+.page {
+	height: 100%;
+	margin: 0px auto;
+	margin-left: 250px;
+}
+
+#navbar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 250px;
+	height: 100%;
+	background-color: #000000;
+	text-align: center;
+	z-index: 2;
+}
+
+#home-icon {
+	margin: 0px auto;
+	background-color: white;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	position: relative;
+	top: 20px;
+	cursor: pointer;
+}
+
+#home-icon img {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	top: 8px;
+	cursor: pointer;
+}
+
+#car-button-list {
+	position: absolute;
+	top: 90px;
+	margin: 0px auto;
+}
+
+.car-button {
+	width: 150px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	margin-left: 40px;
+	padding: 10px;
+	background-color: #FF2321;
+	border-radius: 5px;
+	color: #FFFDF8;
+	cursor: pointer;
+}
+
+#car-button-1 {
+	margin-top: 20px;
+}
+
+#car-button-2, #car-button-3, #car-button-4 {
+
+}
+
+#main {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: -100px;
+	background-image: url(img/sample-bg.jpg);
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.images {
+	position: absolute;
+	display: inline-block;
+}
+
+.page img {
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin: auto;
+}
+
+#car1 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 100%;
+	background-image: url(img/porsche.jpg);
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+#car2 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 200%;
+	background-image: url(img/bmw.jpg);
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+#car3 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 300%;
+	background-image: url(img/c63.jpg);
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+#car4 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 400%;
+	background-image: url(img/rs5.jpg);
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.circ-icon {
+	z-index: 2;
+}
+
+.circ-icon img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: white;
+}
+
+#basic1, #basic2, #basic3, #basic4 {
+	position: relative;
+	left: 50px;
+	top: 55px;
+}
+
+#mechanical1, #mechanical2, #mechanical3, #mechanical4 {
+	position: relative;
+	left: 120px;
+	top: 55px;
+}
+
+.description {
+	width: 250px;
+	position: relative;
+	left: 50px;
+	top: 110px;
+}
+
+#basic-des1, #mech-des1, #basic-des2, #mech-des2, #basic-des3, #mech-des3, #basic-des4, #mech-des4 {
+	display: none;
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid white;
+	position: relative;
+}
+
+#basic-tri1, #basic-tri2, #basic-tri3, #basic-tri4 {
+	left: 15px;
+}
+
+#mech-tri1, #mech-tri2, #mech-tri3, #mech-tri4 {
+	left: 85px;
+}
+
+.rectangle {
+	width: 200px;
+	position: relative;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: white;
+	z-index: 3;
+}
+
+#basic-rect1, #mech-rect1, #basic-rect2, #mech-rect2, #basic-rect3, #mech-rect3, #basic-rect4, #mech-rect4 {
+	
+}
+
+.mpbutton {
+	position: relative;
+	z-index: 100;
+	left: 80%;
+	cursor: pointer;
+}
+
+.morepics { 
+	position: relative;
+	padding: 10px 30px 15px 0px;
+}
+
+.morepics span, .morepics span:before, .morepics span:after {
+	height: 3px;
+	width: 30px;
+	background: #fff;
+	position: absolute;
+	display: block;
+	content: '';
+}
+
+.morepics span:before {
+	top: -10px; 
+}
+
+.morepics span:after {
+	bottom: -10px;
+}
+
+#mp1, #mp2, #mp3, #mp4 {
+
+}
+
+.pic {
+	position: absolute;
+	margin: 30px;
+	display: none;
+}
+
+.top {
+	top: 15%;
+}
+
+.bottom {
+	top: 55%;
+}
+
+.left {
+	left: 10%;
+}
+
+.right {
+	left: 45%;
+}
+
+.pic img {
+	display: inline-block;
+	margin: 0px auto;
+	width: 320px;
+	height: 180px;
+	object-fit: cover;
+	border-radius: 5px;
+	z-index: 6;
+}
+
+#porsche-1, #porsche-2, #porsche-3, #porsche-4, #bmw-1, #bmw-2, #bmw-3, #bmw-4, #c63-1, #c63-2, #c63-3, #c63-4, #rs5-1, #rs5-2, #rs5-3, #rs5-4 {
+
+}
