@@ -7,10 +7,6 @@ $(document).ready(function() {
 		$("html, body").animate({scrollTop: $(window).height()}, "slow");
 	})
 
-	$("#back-to-top").hover(function() {
-		$("#one").css("top", "0px");
-	})
-
 	$("#back-to-top").click(function() {
 		$("html, body").animate({scrollTop: "0px"});
 	})
@@ -83,5 +79,5 @@ $(document).ready(function() {
 	$(window).scroll(function () {
 	    parallax();
 	})
-	
+
 });
