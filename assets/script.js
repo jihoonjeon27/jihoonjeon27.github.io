@@ -3,6 +3,9 @@ $(document).ready(function() {
 	var hcenter = $(window).width() / 2 - 450;
 	$("#white-box").css("left", hcenter);
 
+	var linkcenter = $(window).width() / 2 - 50;
+	$("#web-link").css("left", linkcenter);
+
 	$("#start-button").click(function() {
 		$("html, body").animate({scrollTop: $(window).height()}, "slow");
 	})
