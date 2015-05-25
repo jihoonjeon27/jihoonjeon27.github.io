@@ -118,6 +118,15 @@ div {
 	transform: translate(0px, 2px);
 }
 
+#result {
+	margin: 0px auto;
+	font-weight: 900;
+	font-size: 72px;
+	position: relative;
+	top: 31%;
+	display: none;
+}
+
 #confirm-button {
 	width: 150px;
 	margin: 0px auto;
@@ -126,8 +135,9 @@ div {
 	font-weight: 400;
 	font-size: 24px;
 	border-radius: 5px;
-	position: relative;
-	top: 45%;
+	position: absolute;
+	top: 85%;
+	left: 370px;
 	cursor: pointer;
 	box-shadow: 0px 4px #d35400;
 }

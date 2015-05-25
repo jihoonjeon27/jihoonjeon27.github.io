@@ -65,9 +65,11 @@ $(document).ready(function() {
 		if (chance > 0) {
 			chanceStr = chance + "%";
 		} else {
-			chanceStr = "negligible.";
+			chanceStr = "negligible";
 		}
-		alert("The chance of getting " + successes + " successes out of " + numScrolls + " scrolls with " + $("#rate").val() + " success rate is " + chanceStr);
+		$("#result").show();
+		$("#result").html(chanceStr);
+		// alert("The chance of getting " + successes + " successes out of " + numScrolls + " scrolls with " + $("#rate").val() + " success rate is " + chanceStr);
 	})
 
 	$("#clear").click(function() {
@@ -85,4 +87,4 @@ $(document).ready(function() {
 	    parallax();
 	})
 
-});
+})
