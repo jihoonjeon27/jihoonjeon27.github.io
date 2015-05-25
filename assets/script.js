@@ -47,7 +47,7 @@ $(document).ready(function() {
 			alert("The number of successes cannot be a negative number");
 			return false;
 		}
-		if (successes > numScrolls) {
+		if (numScrolls - successes < 0) {
 			alert("The number of successes cannot be greater than the number of scrolls!");
 			return false;
 		}
@@ -62,7 +62,12 @@ $(document).ready(function() {
 		}
 		var chance = findChance(successRate, numScrolls, successes) * 100;
 		chance = Math.round(chance * 100) / 100;
-		alert("The chance of getting " + successes + " successes out of " + numScrolls + " scrolls with " + $("#rate").val() + " success rate is " + chance + "%");
+		if (chance > 0) {
+			chanceStr = chance + "%";
+		} else {
+			chanceStr = "negligible.";
+		}
+		alert("The chance of getting " + successes + " successes out of " + numScrolls + " scrolls with " + $("#rate").val() + " success rate is " + chanceStr);
 	})
 
 	$("#clear").click(function() {
