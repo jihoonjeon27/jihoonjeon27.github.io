@@ -76,6 +76,7 @@ $(document).ready(function() {
 		$("#rate").val("");
 		$("#num").val("");
 		$("#success").val("");
+		$("#result").hide();
 	})
 
 	function parallax() {
